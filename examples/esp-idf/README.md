@@ -52,3 +52,26 @@ See the Getting Started Guide for all the steps to configure and use the ESP-IDF
 
 * [ESP-IDF Getting Started Guide on ESP32](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html)
 
+## Updating ESP-IDF
+cd ~/esp/esp-idf
+
+git fetch
+
+git checkout v5.1.1
+
+git submodule update --init --recursive
+
+./install.sh
+
+. ./export.sh
+
+cd ~/Micro-RTSP/examples/esp-idf
+
+git submodule update --remote
+
+idf.py fullclean
+
+idf.py menuconfig
+
+idf.py fullclean build
+
