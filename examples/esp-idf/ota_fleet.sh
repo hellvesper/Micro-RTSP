@@ -4,6 +4,7 @@ esp+=( "esp32cam0" )
 esp+=( "esp32cam1" )
 esp+=( "esp32cam2" )
 esp+=( "esp32cam3" )
+esp+=( "esp32cam_pole" )
 
 #setup the build envrionment
 . ~/esp/esp-idf/export.sh
